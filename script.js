@@ -81,7 +81,7 @@ $(function () {
   DFLIP.defaults.pdfjsSrc            = 'https://cdn.jsdelivr.net/npm/dflip@1.0.0/js/libs/pdf.min.js';
   DFLIP.defaults.pdfjsWorkerSrc      = 'https://cdn.jsdelivr.net/npm/dflip@1.0.0/js/libs/pdf.worker.min.js';
 
-  $('#df-flipbook').flipBook('menu.pdf', {
+  $('#df-flipbook').flipBook('Taberna do bairro alto no price.pdf', {
     height          : 700,
     webgl           : true,
     backgroundColor : '#1a0900',
