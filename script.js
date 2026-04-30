@@ -17,16 +17,25 @@ document.querySelectorAll('.hours-table tr').forEach(row => {
   if (row.cells[0] && row.cells[0].textContent.trim() === today) row.classList.add('today');
 });
 
-// Lightbox
+// Lightbox — all 17 gallery images
 const lbImages = [
-  { type: 'img', src: 'images/cover2.jpeg' },
-  { type: 'img', src: 'images/cover3.jpeg' },
-  { type: 'img', src: 'images/imgi_26_WhatsApp-Image-2026-01-22-at-5.06.46-PM.jpg' },
-  { type: 'img', src: 'images/imgi_27_WhatsApp-Image-2026-01-22-at-5.09.34-PM.jpg' },
-  { type: 'img', src: 'images/cover1.jpeg' },
-  { type: 'img', src: 'images/imgi_28_WhatsApp-Image-2026-01-22-at-5.34.24-PM.jpg' },
-  { type: 'img', src: 'images/imgi_43_1.jpg' },
-  { type: 'img', src: 'images/imgi_44_2.jpg' },
+  { type: 'img', src: 'gallery/WhatsApp Image 2026-04-30 at 12.54.00 AM.jpeg' },
+  { type: 'img', src: 'gallery/WhatsApp Image 2026-04-30 at 12.54.00 AM (1).jpeg' },
+  { type: 'img', src: 'gallery/WhatsApp Image 2026-04-30 at 12.54.00 AM (2).jpeg' },
+  { type: 'img', src: 'gallery/WhatsApp Image 2026-04-30 at 12.54.00 AM (3).jpeg' },
+  { type: 'img', src: 'gallery/WhatsApp Image 2026-04-30 at 12.54.00 AM (4).jpeg' },
+  { type: 'img', src: 'gallery/WhatsApp Image 2026-04-30 at 12.54.00 AM (5).jpeg' },
+  { type: 'img', src: 'gallery/WhatsApp Image 2026-04-30 at 12.54.00 AM (6).jpeg' },
+  { type: 'img', src: 'gallery/WhatsApp Image 2026-04-30 at 12.54.00 AM (7).jpeg' },
+  { type: 'img', src: 'gallery/WhatsApp Image 2026-04-30 at 12.54.00 AM (8).jpeg' },
+  { type: 'img', src: 'gallery/WhatsApp Image 2026-04-30 at 12.54.01 AM.jpeg' },
+  { type: 'img', src: 'gallery/WhatsApp Image 2026-04-30 at 12.54.01 AM (1).jpeg' },
+  { type: 'img', src: 'gallery/WhatsApp Image 2026-04-30 at 12.54.01 AM (2).jpeg' },
+  { type: 'img', src: 'gallery/WhatsApp Image 2026-04-30 at 12.54.01 AM (3).jpeg' },
+  { type: 'img', src: 'gallery/WhatsApp Image 2026-04-30 at 12.54.01 AM (4).jpeg' },
+  { type: 'img', src: 'gallery/WhatsApp Image 2026-04-30 at 12.54.01 AM (5).jpeg' },
+  { type: 'img', src: 'gallery/WhatsApp Image 2026-04-30 at 12.54.01 AM (6).jpeg' },
+  { type: 'img', src: 'gallery/WhatsApp Image 2026-04-30 at 12.54.01 AM (7).jpeg' },
 ];
 let currentLb = 0;
 
@@ -72,7 +81,7 @@ $(function () {
   DFLIP.defaults.pdfjsSrc            = 'https://cdn.jsdelivr.net/npm/dflip@1.0.0/js/libs/pdf.min.js';
   DFLIP.defaults.pdfjsWorkerSrc      = 'https://cdn.jsdelivr.net/npm/dflip@1.0.0/js/libs/pdf.worker.min.js';
 
-  $('#df-flipbook').flipBook('taberna do bairro alto menu.pdf', {
+  $('#df-flipbook').flipBook('menu.pdf', {
     height          : 700,
     webgl           : true,
     backgroundColor : '#1a0900',
